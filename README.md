@@ -1,13 +1,13 @@
 Metro Sarthi 🚇
 
-Metro Sarthi is a mini-project built using HTML, CSS, and JavaScript.
-It is a clone-inspired version of Delhi Metro with a simple and interactive UI.
+Metro Sarthi built using HTML, CSS, and JavaScript, inspired by the Delhi Metro system.
+It provides routes, fare details, and an emergency contact section with a simple and user-friendly interface
 
 ✨ Features
 
 View all metro routes
 
-Fare calculator for ticket prices
+Check fare prices
 
 Emergency contact number
 
