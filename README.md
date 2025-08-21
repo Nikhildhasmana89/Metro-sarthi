@@ -11,7 +11,6 @@ Fare calculator for ticket prices
 
 Emergency contact number
 
-Clean and responsive UI (designed by me)
 
 🔧 Tech Stack
 
