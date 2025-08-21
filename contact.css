@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header and Navbar Styles */
+header {
+    background-color: #0a1724;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px; /* Set logo height */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.navbar {
+    margin-top: 10px; /* Space between logo and nav */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center links */
+    gap: 15px; /* Space between links */
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Start slightly above */
+    animation: fadeInSlideUp 0.5s forwards 0.3s; /* Fade-in and slide-up effect */
+}
+
+.nav-links li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Space around links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+
+
+/* Optional: Custom Background Colors for Different Line Cards */
+
+
+/* Add keyframes for sliding effect */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Original position */
+    }
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.headr{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.contact-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contact-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}

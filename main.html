@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Metro Planner</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .journey-planner {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .journey-planner h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .journey-planner label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .journey-planner select, 
+        .journey-planner button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .journey-planner button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .journey-planner button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1> Metro sarthi</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="fares.html">Fares</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="journey-planner">
+            <h2>Plan Your Journey</h2>
+            <form onsubmit="planJourney(event)">
+                <label for="start">Your Station:</label>
+                <select id="start" onchange="populateDestination()" required>
+                    <option value="">Select your station</option>
+                </select>
+
+                <label for="destination">Destination Station:</label>
+                <select id="destination" required>
+                    <option value="">Select your destination</option>
+                </select>
+
+                <button type="submit">Show Route</button>
+            </form>
+        </div>
+
+        <div class="map">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Delhi_metro_rail_network.svg/1200px-Delhi_metro_rail_network.svg.png" alt="Metro Map">
+        </div>
+    </main>
+
+   
+</body>
+</html>

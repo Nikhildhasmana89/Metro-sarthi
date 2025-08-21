@@ -1,0 +1,154 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header and Navbar Styles */
+header {
+    background-color: #0a1724;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideUp 0.5s forwards 0.3s;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Service Status Section */
+.service-status {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.line-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.line-card {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.line-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.line-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+}
+
+.status {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #30a54b;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Custom Background Colors for Different Line Cards */
+.line-card:nth-child(1) { background-color: #fdecea; } /* Light red */
+.line-card:nth-child(2) { background-color: #fdf7d4; } /* Light yellow */
+.line-card:nth-child(3) { background-color: #e6f7ff; } /* Light blue */
+.line-card:nth-child(4) { background-color: #e6f7ff; } /* Light blue */
+.line-card:nth-child(5) { background-color: #d8f3e0; } /* Light green */
+.line-card:nth-child(6) { background-color: #f3e3f9; } /* Light violet */
+.line-card:nth-child(7) { background-color: #f7d8ec; } /* Light pink */
+.line-card:nth-child(8) { background-color: #ffe3ff; } /* Light magenta */
+.line-card:nth-child(9) { background-color: #e0e0e0; } /* Grey */
+.line-card:nth-child(10) { background-color: #f3ddc2; } /* Light orange */
+.line-card:nth-child(11) { background-color: #f1e2d3; } /* Rapid metro line */
+
+/* Keyframes for sliding effect */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

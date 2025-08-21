@@ -1,0 +1,167 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header and Navbar Styles */
+header {
+    background-color: #0a1724;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px; /* Set logo height */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.navbar {
+    margin-top: 10px; /* Space between logo and nav */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center links */
+    gap: 15px; /* Space between links */
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Start slightly above */
+    animation: fadeInSlideUp 0.5s forwards 0.3s; /* Fade-in and slide-up effect */
+}
+
+.nav-links li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Space around links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+
+
+/* Optional: Custom Background Colors for Different Line Cards */
+
+
+/* Add keyframes for sliding effect */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Original position */
+    }
+}
+
+
+h2, h3 {
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.fare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.fare-table th, .fare-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.fare-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.fare-calculator {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+.smart-card-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.smart-card-details h3 {
+    color: #007bff;
+}
+
+.smart-card-details h4 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.smart-card-details ul, .smart-card-details ol {
+    margin-left: 20px; /* Indent list items */
+}
+
+.smart-card-details li {
+    margin-bottom: 5px; /* Space between list items */
+}
